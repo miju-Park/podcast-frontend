@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { useForm } from 'react-hook-form';
 import { Button } from '../../components/button';
 import { FormError } from '../../components/form-error';
-import { CATEGORY_TYPES } from '../../const';
+import { CATEGORY_TYPES, URL } from '../../const';
 import { createPodcast, createPodcastVariables } from '../../__generated__/createPodcast';
 
 const CREATE_PODCAST_MUTATION = gql`
@@ -51,7 +51,7 @@ export const CreatePodcast = () => {
       const formBody = new FormData();
       formBody.append("file", actualFile);
       const { url: coverImg } = await (
-        await fetch("http://localhost:4000/upload/", {
+        await fetch(`${URL}/upload`, {
           method: "POST",
           body: formBody,
         })

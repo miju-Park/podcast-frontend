@@ -19,6 +19,13 @@ export interface CreatePodcastInput {
   coverImg: string;
 }
 
+export interface CreateEpisodeInput {
+  title: string;
+  category: string;
+  audioFile: string;
+  podcastId: number;
+}
+
 export interface EditProfileInput {
   email?: string | null;
   password?: string | null;

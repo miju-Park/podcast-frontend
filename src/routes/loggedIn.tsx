@@ -5,6 +5,7 @@ import { useMe } from "../hooks/useMe";
 import { EditProfile } from "../pages/common/editProfile";
 import PodcastDetail from "../pages/common/podcastDetail";
 import Podcast from "../pages/common/podcasts";
+import { CreateEpisode } from "../pages/host/add-episode";
 import { CreatePodcast } from "../pages/host/create-podcast";
 import { EditPodcast } from "../pages/host/edit-podcast";
 import { UserRole } from "../__generated__/globalTypes";
@@ -20,6 +21,7 @@ const ClientRoutes = [
 
 const HostRoutes = [
   {path:"/edit-podcast/:id", component: <EditPodcast />},
+  {path:"/add-episode/:id", component: <CreateEpisode />},
   { path: "/add-podcast", component: <CreatePodcast /> },
 ]
 

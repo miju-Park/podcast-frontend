@@ -9,3 +9,5 @@ export const CATEGORY_TYPES = [
   "스포츠/레저방송사",
   "기타",
 ];
+
+export const URL = 'https://mj-podcast-backend.herokuapp.com"';

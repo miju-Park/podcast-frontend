@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import { getAllPodcasts } from "../../__generated__/getAllPodcasts";
 import { Podcast as PodcastComponent } from "../../components/podcast";
 
-const PODCASTS_QUERY = gql`
+export const PODCASTS_QUERY = gql`
   query getAllPodcasts {
     getAllPodcasts {
       ok
