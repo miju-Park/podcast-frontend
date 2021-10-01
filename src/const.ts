@@ -10,4 +10,4 @@ export const CATEGORY_TYPES = [
   "기타",
 ];
 
-export const URL = 'https://mj-podcast-backend.herokuapp.com"';
+export const URL = "https://mj-podcast-backend.herokuapp.com";
